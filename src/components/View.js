@@ -48,11 +48,10 @@ const View = () => {
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
                             </tr>
- 
                         </tbody>
                     </table>
                 </div>
- 
+
             </div>
         </div>
         <div className='container d-flex justify-content-center'>

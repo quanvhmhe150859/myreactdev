@@ -102,7 +102,6 @@ const List = () => {
                         )
                     })
                 }
- 
             </tbody>
         </table>
         </div>

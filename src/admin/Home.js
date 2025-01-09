@@ -37,7 +37,7 @@ const Home = () => {
     }
  
     return (
-        <div className="">
+        <div>
             <Header />
                 <div className='row'>
                     <div className='col-md-4'>

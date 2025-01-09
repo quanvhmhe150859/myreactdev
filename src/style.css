@@ -1,0 +1,10 @@
+.logo{
+    width: 20%;
+}
+.title{
+    width: 50%;
+    height: fit-content;
+}
+.list{
+    justify-content: center;
+}

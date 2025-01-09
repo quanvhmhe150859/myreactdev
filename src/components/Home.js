@@ -3,6 +3,7 @@ import List from './List';
 import axios from 'axios';
 import Header from "./Header";
 import Footer from "./Footer";
+import '../style.css';
  
 const Home = () => {
  
@@ -39,26 +40,7 @@ const Home = () => {
     return (
         <div className="">
             <Header />
-                <div className='row'>
-                    <div className='col-md-4'>
-                        <h3>Add Your Detail</h3>
-                        <form>
-                            <div className="mb-3 mt-3">
-                                <label className="form-label"> Full Name:</label>
-                                <input type="text" className="form-control" id="name" placeholder="Enter Your Full Name" name="name" onChange={e => changeUserFieldHandler(e)} />
-                            </div>
-                            <div className="mb-3 mt-3">
-                                <label className="form-label">Email:</label>
-                                <input type="email" className="form-control" id="email" placeholder="Enter email" name="email" onChange={e => changeUserFieldHandler(e)} required/>
-                            </div>
-                            <div className="mb-3 mt-3">
-                                <label className="form-label">Password:</label>
-                                <input type="text" className="form-control" id="password" placeholder="Enter password" name="password" onChange={e => changeUserFieldHandler(e)} required/>
-                            </div>
-                             
-                            <button type="submit" className="btn btn-primary" onClick={e => onSubmitChange(e)}>Add User</button>
-                        </form>
-                    </div>
+                <div className='list row'>
                     <div className='col-md-8'>
                         <List />
                     </div>

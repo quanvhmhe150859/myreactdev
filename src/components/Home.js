@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import List from './List';
 import axios from 'axios';
+import Menu from "./Menu";
 import Header from "./Header";
 import Footer from "./Footer";
 import '../style.css';
+import '../scripts';
  
 const Home = () => {
  
@@ -39,6 +41,7 @@ const Home = () => {
  
     return (
         <div className="">
+            <Menu />
             <Header />
                 <div className='list row'>
                     <div className='col-md-8'>

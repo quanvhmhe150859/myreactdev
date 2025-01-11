@@ -51,6 +51,8 @@ const Home = () => {
             <Header />
             <Services />
             <Products />
+            <About />
+            <Team />
             <Contact />
             <Footer />
         </div>

@@ -4,6 +4,11 @@ import axios from 'axios';
 import Menu from "./Menu";
 import Header from "./Header";
 import Footer from "./Footer";
+import Services from './Services';
+import Products from './Products';
+import About from './About';
+import Team from './Team';
+import Contact from './Contact';
 import '../style.css';
 import '../scripts';
  
@@ -35,6 +40,7 @@ const Home = () => {
             console.log("Something Wrong");
         }
     }
+
     if(loading){
         return <Home/>
     }
@@ -43,11 +49,9 @@ const Home = () => {
         <div className="">
             <Menu />
             <Header />
-                <div className='list row'>
-                    <div className='col-md-8'>
-                        <List />
-                    </div>
-                </div>
+            <Services />
+            <Products />
+            <Contact />
             <Footer />
         </div>
     )

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import View from "./components/View";
 import Edit from "./components/Edit";
 import HomeAdmin from "./admin/Home";
+import Login from "./components/Login";
  
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route exact path="/view/:id" element={<View/>}/>
               <Route exact path="/edit/:id" element={<Edit/>}/>
               <Route exact path="/admin/home" element={<HomeAdmin/>}/>
+              <Route exact path="/login" element={<Login/>}/>
             </Routes>
         </Router>
     </div>

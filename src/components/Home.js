@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import List from './List';
 import axios from 'axios';
 import Menu from "./Menu";
 import Header from "./Header";

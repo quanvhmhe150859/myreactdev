@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ListPurse from './ListPurse';
 import axios from 'axios';
+import Menu from '../components/Menu';
+import Header from '../components/Header';
  
 const Home = () => {
  
@@ -59,6 +61,8 @@ const Home = () => {
  
     return (
         <div>
+            <Menu />
+            <Header />
                 <div className='row'>
                     <div className='col-md-4'>
                         <h3>Add new Purse</h3>

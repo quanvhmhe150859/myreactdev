@@ -1,9 +1,10 @@
 // Header.js
 import React from "react";
+import headerBg from '../assets/images/header-bg.jpg';
 
 function Header() {
     return (
-            <header class="masthead" style={{ backgroundImage: "url(/images/header-bg.jpg)" }}>
+            <header class="masthead" style={{ backgroundImage: `url(${headerBg})` }}>
                 <div class="container">
                     <div class="masthead-subheading">Welcome To Our Shop!</div>
                     <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>

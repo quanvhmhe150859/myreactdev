@@ -24,7 +24,7 @@ const PurseDetail = () => {
     },[id]);
  
     const clickToBackHandler=()=>{
-        navigate('/');
+        navigate('/admin/home');
     }
  
     return <div>

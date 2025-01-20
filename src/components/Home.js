@@ -50,8 +50,8 @@ const Home = () => {
             <Header />
             <Services />
             <Products />
-            <About />
-            <Team />
+            {/* <About />
+            <Team /> */}
             <Contact />
             <Footer />
         </div>

@@ -33,6 +33,7 @@ const PurseDetail = () => {
                 <div className='col-md-12'>
  
                     <h1>Purse Details</h1>
+                    <img src={`http://127.0.0.1:8000/storage/uploads/purses/${user.image_path}`} alt="Purse" />
                     <table className="table">
                         <thead>
                             <tr>
@@ -41,7 +42,6 @@ const PurseDetail = () => {
                                 <th>Material</th>
                                 <th>Price</th>
                                 <th>Stock</th>
-                                <th>Image</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -51,7 +51,6 @@ const PurseDetail = () => {
                                 <td>{user.material}</td>
                                 <td>{user.price}</td>
                                 <td>{user.stock}</td>
-                                <td>{user.image_path}</td>
                             </tr>
                         </tbody>
                     </table>

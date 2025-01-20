@@ -10,7 +10,7 @@ const Products = () => {
 
     const fetchData = async () => {
         try {
-            const result = await axios("http://127.0.0.1:8000/api/users");
+            const result = await axios("http://127.0.0.1:8000/api/purses");
             //console.log(result.data.results);
             setUSerData(result.data.results)
         } catch (err) {
@@ -46,11 +46,11 @@ const Products = () => {
                                             <div class="portfolio-hover">
                                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                             </div>
-                                            <img class="img-fluid" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                                            <img class="img-fluid" src={`http://127.0.0.1:8000/storage/uploads/purses/${user.image_path}`} alt="..." />
                                         </a>
                                         <div class="portfolio-caption">
                                             <div class="portfolio-caption-heading">{user.name}</div>
-                                            <div class="portfolio-caption-subheading text-muted">{user.email}</div>
+                                            <div class="portfolio-caption-subheading text-muted">${user.price}</div>
                                         </div>
                                     </div>
                                 </div>

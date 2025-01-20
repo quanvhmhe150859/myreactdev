@@ -3,6 +3,7 @@ import ListPurse from './ListPurse';
 import axios from 'axios';
 import Menu from '../components/Menu';
 import Header from '../components/Header';
+import headerBg from '../assets/images/header-bg.jpg';
 import 'cropperjs/dist/cropper.css'; // Import cropper CSS
 import { Cropper } from 'react-cropper';
 
@@ -85,8 +86,9 @@ const Home = () => {
     return (
         <div>
             <Menu />
-            <Header />
-            <div className="row">
+            <div style={{height: '80px', backgroundImage: `url(${headerBg})`}}></div>
+            {/* <Header /> */}
+            <div style={{marginTop: '20px'}} className="row">
                 <div className="col-md-4">
                     <h3>Add new Purse</h3>
                     <form>

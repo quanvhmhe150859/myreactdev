@@ -4,7 +4,7 @@ import "./App.css";
 import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import View from "./admin/PurseDetail";
-import Edit from "./components/Edit";
+import Edit from "./admin/EditPurse";
 import HomeAdmin from "./admin/Home";
 import Login from "./components/Login";
  
